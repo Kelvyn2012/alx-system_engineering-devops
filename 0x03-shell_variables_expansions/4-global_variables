@@ -1,15 +1,2 @@
 #!/bin/bash
-# list_all.sh - list local variables, environment variables, and functions
-
-echo "================= ENVIRONMENT VARIABLES ================="
-printenv | sort
-
-echo
-echo "================= LOCAL + ENVIRONMENT VARIABLES ================="
-# declare -p lists all variables (exported and non-exported)
-declare -p 2>/dev/null | sort
-
-echo
-echo "================= FUNCTIONS ================="
-declare -F
-
+printenv
