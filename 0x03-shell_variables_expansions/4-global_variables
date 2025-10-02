@@ -1,5 +1,2 @@
 #!/bin/bash
-# list_env_vars.sh - list all environment variables
-
-echo "Listing environment variables..."
 printenv
